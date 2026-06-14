@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Project Detail Toggles
     const toggleBtns = document.querySelectorAll('.toggle-details-btn');
     toggleBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
+        btn.addEventListener('click', () => {
             const targetId = btn.getAttribute('data-target');
             const detailsDiv = document.getElementById(targetId);
             
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const isHidden = detailsDiv.classList.contains('hidden');
                 btn.innerHTML = isHidden 
-                    ? `View ${targetId.includes('octo') ? 'Methodologies' : targetId.includes('sales') ? 'Pipelines' : 'Tech Stack'} <i class="fa-solid fa-chevron-down"></i>`
+                    ? `View Details <i class="fa-solid fa-chevron-down"></i>`
                     : `Hide Details <i class="fa-solid fa-chevron-up"></i>`;
             }
         });
