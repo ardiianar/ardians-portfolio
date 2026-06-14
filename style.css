@@ -765,10 +765,7 @@ body {
     flex-direction: column;
 }
 
-.project-header .toggle-details-btn {
-    align-self: flex-start;
-    flex-shrink: 0;
-}
+
 
 /* Two-column Layout inside Card */
 .project-main-content {
@@ -854,49 +851,7 @@ body {
     margin-top: auto;
 }
 
-/* Expandable Project Details */
-.project-details-expand {
-    margin-top: 10px;
-    animation: slide-down 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
 
-.project-details-expand h5 {
-    font-size: 0.95rem;
-    color: var(--clr-red);
-    margin-bottom: 12px;
-}
-
-.project-details-expand ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.project-details-expand li {
-    font-size: 0.88rem;
-    color: var(--text-secondary);
-    position: relative;
-    padding-left: 15px;
-}
-
-.project-details-expand li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--clr-red);
-}
-
-@keyframes slide-down {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .hidden {
     display: none !important;

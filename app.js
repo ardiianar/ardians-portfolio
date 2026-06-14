@@ -32,23 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Project Detail Toggles
-    const toggleBtns = document.querySelectorAll('.toggle-details-btn');
-    toggleBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetId = btn.getAttribute('data-target');
-            const detailsDiv = document.getElementById(targetId);
-            
-            if (detailsDiv) {
-                detailsDiv.classList.toggle('hidden');
-                
-                const isHidden = detailsDiv.classList.contains('hidden');
-                btn.innerHTML = isHidden 
-                    ? `View Details <i class="fa-solid fa-chevron-down"></i>`
-                    : `Hide Details <i class="fa-solid fa-chevron-up"></i>`;
-            }
-        });
-    });
+
 
     // 4. Organizational Experience Tab Switcher
     const tabBtns = document.querySelectorAll('.exp-tab-btn');
